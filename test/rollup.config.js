@@ -1,7 +1,7 @@
 import clean from "@timly/plugin-clean";
 
 const input = "src/index.ts";
-
+console.log("ddddddddddd", clean());
 export default [
   {
     input,
