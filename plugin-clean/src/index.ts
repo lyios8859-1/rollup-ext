@@ -1,14 +1,21 @@
-import { InputOptions, PluginHooks } from "rollup";
 import { CleanPluginOptions } from "./types";
 
-export default function (opt = {} as CleanPluginOptions) {
+console.log("start");
+
+export default function (options = {} as CleanPluginOptions) {
+  console.log("options", options);
   return {
     name: "@timly/plugin-clean",
-    opetons(options: InputOptions) {
-      //
-      if (!opt.targets) {
-        console.log(options);
-      }
+    load() {
+      // code : load就是插件对象特有的属性，这里可以放一些逻辑
+
+      console.log(options);
+    },
+    transform(code: string) {
+      // const Reg = /console\.log\(.*\)/gi;
+      console.log(">>>>>>>>>>>>>");
+      // return code.replace(Reg, "");
+      return code;
     }
-  } as Partial<PluginHooks>;
+  };
 }

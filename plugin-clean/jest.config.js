@@ -13,7 +13,7 @@ export default {
   coverageDirectory: "./coverage",
   coveragePathIgnorePatterns: ["node_modules", "src/tests"],
   moduleNameMapper: {
-    "@timly/(.*)/(.*)": "<rootDir>/../$1/src/$2.ts",
-    "@timly/(.*)$": "<rootDir>/../$1/src"
+    "@rollup-ext/(.*)/(.*)": "<rootDir>/../$1/src/$2.ts",
+    "@rollup-ext/(.*)$": "<rootDir>/../$1/src"
   }
 };
