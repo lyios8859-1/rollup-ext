@@ -1,7 +1,11 @@
 import clean from "@timly/plugin-clean";
+import copy from "@timly/plugin-copy";
 
 const input = "src/index.ts";
-console.log("test: ", clean());
+
+// console.log("clean", clean());
+// console.log("copy", copy());
+
 export default [
   {
     input,
@@ -13,11 +17,7 @@ export default [
         chunkFileNames: "[name].mjs"
       }
     ],
-    plugins: [
-      clean({
-        verbose: true
-      })
-    ]
+    plugins: [clean(), copy()]
   },
   {
     input,
@@ -28,17 +28,6 @@ export default [
       chunkFileNames: "[name].cjs"
     },
 
-    plugins: [clean()]
-  },
-  {
-    input,
-    output: {
-      format: "umd",
-      dir: "./dest/umd",
-      entryFileNames: "[name].umd.js",
-      name: "test",
-      plugins: [clean()],
-      sourcemap: true
-    }
+    plugins: [clean(), copy()]
   }
 ];

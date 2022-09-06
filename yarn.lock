@@ -1731,7 +1731,7 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@^8.0.0", "@semantic-release/github@^8.0.6":
+"@semantic-release/github@8.0.6", "@semantic-release/github@^8.0.0":
   version "8.0.6"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-8.0.6.tgz#5235386d65a5d7d650dc10a6ebce908d213234f7"
   integrity sha512-ZxgaxYCeqt9ylm2x3OPqUoUqBw1p60LhxzdX6BqJlIBThupGma98lttsAbK64T6L6AlNa2G5T66BbiG8y0PIHQ==
@@ -1806,14 +1806,6 @@
   integrity sha512-BPS4ynJW/o92PUR4wgriz2Ud5gpST5vz6GQfMixEDK0Z8ZCUv2M7SkBLykH56T++Xs+8ln9zTGbOvNGIe02/jw==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
-
-"@timly/plugin-clean@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@timly/plugin-clean/-/plugin-clean-1.0.0.tgz#9e02f0a8aa9001df9bb098a03ad5b4fdb3947f34"
-  integrity sha512-xrTrd5UwpR97m54P0u5b3W/ULtJxwiGP2IXGHuk0HN2ltsnTfROxLBQb9glIVeDDKEsaRBgenynVQN6wiBIbzg==
-  dependencies:
-    "@niceties/logger" "1.0.4"
-    cross-env "7.0.3"
 
 "@tootallnate/once@1":
   version "1.1.2"
