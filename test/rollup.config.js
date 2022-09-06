@@ -12,7 +12,7 @@ export default [
     output: [
       {
         format: "es",
-        dir: "./dest/es",
+        dir: "./dist/es",
         entryFileNames: "[name].mjs",
         chunkFileNames: "[name].mjs"
       }
@@ -23,7 +23,7 @@ export default [
     input,
     output: {
       format: "cjs",
-      dir: "./dest/cjs",
+      dir: "./dist/cjs",
       entryFileNames: "[name].cjs",
       chunkFileNames: "[name].cjs"
     },
